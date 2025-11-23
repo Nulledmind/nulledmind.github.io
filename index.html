@@ -579,9 +579,9 @@ function formatOrderForCopy() {
   });
 
   lines.push("");
-  lines.push(`Subtotal: $${subtotal.toFixed(2)}`);
   if (isMember) {
-    lines.push(`Member Discount (${(MEMBER_DISCOUNT_PERCENTAGE * 100).toFixed(0)}%): -$${discount.toFixed(2)}`);
+    lines.push(`Subtotal: $${subtotal.toFixed(2)}`);
+    lines.push(`VIP Discount (${(MEMBER_DISCOUNT_PERCENTAGE * 100).toFixed(0)}%): -$${discount.toFixed(2)}`);
   }
   lines.push(`Total: $${grandTotal.toFixed(2)}`);
 
